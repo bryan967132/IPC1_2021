@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Desencriptacion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/IPC.png"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-table100">
+
+			<div class="wrap-table100">
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 28px;" align="center">Desencriptacion del Mensaje</p >
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">Se usaran las mismas Matrices Clave, el mismo codigo de letras a numeros y ahora la Matriz C.<br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz C</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">46</td>
+<td class="cell100 column1">110</td>
+<td class="cell100 column1">121</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">17</td>
+<td class="cell100 column1">53</td>
+<td class="cell100 column1">150</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">29</td>
+<td class="cell100 column1">162</td>
+<td class="cell100 column1">187</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz Clave A</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">3</td>
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">0</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">2</td>
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">6</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">7</td>
+<td class="cell100 column1">4</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz Clave B</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">6</td>
+<td class="cell100 column1">1</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">3</td>
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">0</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">1</td>
+<td class="cell100 column1">1</td>
+<td class="cell100 column1">2</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 20px;" align="left">Procedimiento:</p >
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">1. Calcular el Determinante de la Matriz Clave A.<br><br></p><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">Determinante = 3&#183;((0)(4) - (6)(7)) - 5&#183;((2)(4) - (6)(0)) + 0&#183;((2)(7) - (0)(0)) = -166<br><br></p><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">2. Obtener la Transpuesta de la Matriz Clave A.<br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Transpuesta A</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">3</td>
+<td class="cell100 column1">2</td>
+<td class="cell100 column1">0</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">7</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">6</td>
+<td class="cell100 column1">4</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">3. Calcular la Adjunta de la Transpuesta A.<br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Adjunta A</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1">(-1)<sup>0+0</sup>&#183;[(0)(4) - (7)(6)] = -42</td>
+									<td class="cell100 column1">(-1)<sup>0+1</sup>&#183;[(5)(4) - (7)(0)] = -20</td>
+									<td class="cell100 column1">(-1)<sup>0+2</sup>&#183;[(5)(6) - (0)(0)] = 30</td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">(-1)<sup>1+0</sup>&#183;[(2)(4) - (0)(6)] = -8</td>
+									<td class="cell100 column1">(-1)<sup>1+1</sup>&#183;[(3)(4) - (0)(0)] = 12</td>
+									<td class="cell100 column1">(-1)<sup>1+2</sup>&#183;[(3)(6) - (2)(0)] = -18</td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">(-1)<sup>2+0</sup>&#183;[(2)(7) - (0)(0)] = 14</td>
+									<td class="cell100 column1">(-1)<sup>2+1</sup>&#183;[(3)(7) - (0)(5)] = -21</td>
+									<td class="cell100 column1">(-1)<sup>2+2</sup>&#183;[(3)(0) - (2)(5)] = -10</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+<p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">4. Calcular la Inversa de Matriz Clave A.<br>Ecuacion: </p><div class="eq-c">
+				A<sup>-1</sup> =
+				<div class="fraction">
+				<span class="fup">Adj A</span>
+				<span class="bar">/</span>
+				<span class="fdn">det A</span>
+				</div>
+				</div><br><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Inversa de A o A<sup>-1</sup></th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">-42</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td><td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">-20</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td><td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">30</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td></tr>
+<tr class="row100 body">
+<td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">-8</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td><td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">12</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td><td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">-18</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td></tr>
+<tr class="row100 body">
+<td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">14</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td><td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">-21</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td><td class="cell100 column1"><div class="eq-c">
+				<div class="fraction">
+				<span class="fup">-10</span>
+				<span class="bar">/</span>
+				<span class="fdn">-166</span>
+				</div>
+				</div></td></tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">5. Calcular C - B<br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz C - B</sup></th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">46 - 5 = 41</td><td class="cell100 column1">110 - 6 = 104</td><td class="cell100 column1">121 - 1 = 120</td></tr>
+<tr class="row100 body">
+<td class="cell100 column1">17 - 3 = 14</td><td class="cell100 column1">53 - 5 = 48</td><td class="cell100 column1">150 - 0 = 150</td></tr>
+<tr class="row100 body">
+<td class="cell100 column1">29 - 1 = 28</td><td class="cell100 column1">162 - 1 = 161</td><td class="cell100 column1">187 - 2 = 185</td></tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">6. Multiplicar A<sup>-1</sup> por C - B.<br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz A<sup>-1</sup>(C - B) = M</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(-42)(41)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-20)(14)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(30)(28)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 7</td>
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(-42)(104)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-20)(48)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(30)(161)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 3</td>
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(-42)(120)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-20)(150)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(30)(185)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 15</td>
+</div></tr>
+<tr class="row100 body">
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(-8)(41)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(12)(14)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-18)(28)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 4</td>
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(-8)(104)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(12)(48)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-18)(161)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 19</td>
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(-8)(120)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(12)(150)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-18)(185)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 15</td>
+</div></tr>
+<tr class="row100 body">
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(14)(41)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-21)(14)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-10)(28)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 0</td>
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(14)(104)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-21)(48)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-10)(161)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 7</td>
+<td class="cell100 column1"><div class=\"eq-c\"><div class="fraction">
+					<span class="fup">(14)(120)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-21)(150)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> + <div class="fraction">
+					<span class="fup">(-10)(185)</span>
+					<span class="bar">/</span>
+					<span class="fdn">-166</span>
+					</div> = 20</td>
+</div></tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">7. Sustituir los numeros por sus respectivas letras para descubrir el mensaje<br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz M</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">h</td>
+<td class="cell100 column1">d</td>
+<td class="cell100 column1">o</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">e</td>
+<td class="cell100 column1">s</td>
+<td class="cell100 column1">o</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">a</td>
+<td class="cell100 column1">h</td>
+<td class="cell100 column1">t</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 25px;" align="justify">El mensaje desencriptado es: <br>h&nbsp;&nbsp;e&nbsp;&nbsp;a&nbsp;&nbsp;d&nbsp;&nbsp;s&nbsp;&nbsp;h&nbsp;&nbsp;o&nbsp;&nbsp;o&nbsp;&nbsp;t&nbsp;&nbsp;<br><br></p>
+<p  style="color: #0f3007;font-family: sans-serif;font-size: 15px;" align="right">Generado: Tue Apr 13 11:58:51 CST 2021<br><br></p>
+<div align="center">
+				<a class="boton" href="Encriptacion.html" style="color: #ffffff;">Reporte Encriptacion</a>
+				</div></div>
+		</div>
+	</div>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+			
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

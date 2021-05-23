@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Encriptacion</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/IPC.png"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 28px;" align="center">Encriptacion del Mensaje</p >
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">Se ingreso un mensaje por teclado, cada letra sera sustituida por un numero comenzando en a = 0 hasta llegar a z = 26, y el espacio u otro caracter diferente a los alfabeticos se sustituira por 27. Cada caracter del mensaje se ordenara en una matriz de 3 filas por n columnas, la matriz sera llenada por columnas. Tambien se ingreso dos matrices clave.<br><br></p>
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 25px;" align="center">El mensaje ingresado es: HEADSHOOT<br><br>
+				</p>
+<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz Textual Del Mensaje</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">H</td>
+<td class="cell100 column1">D</td>
+<td class="cell100 column1">O</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">E</td>
+<td class="cell100 column1">S</td>
+<td class="cell100 column1">O</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">A</td>
+<td class="cell100 column1">H</td>
+<td class="cell100 column1">T</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">Para poder encriptar el mensaje se debe hacer la sustitucion de las letras, sin importar si son mayasculas o minusculas, por sus respectivos numeros.<br><br></p>
+				<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Codigo</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1">A</td>
+									<td class="cell100 column1">B</td>
+									<td class="cell100 column1">C</td>
+									<td class="cell100 column1">D</td>
+									<td class="cell100 column1">E</td>
+									<td class="cell100 column1">F</td>
+									<td class="cell100 column1">G</td>
+									<td class="cell100 column1">H</td>
+									<td class="cell100 column1">I</td>
+									<td class="cell100 column1">J</td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">0</td>
+									<td class="cell100 column1">1</td>
+									<td class="cell100 column1">2</td>
+									<td class="cell100 column1">3</td>
+									<td class="cell100 column1">4</td>
+									<td class="cell100 column1">5</td>
+									<td class="cell100 column1">6</td>
+									<td class="cell100 column1">7</td>
+									<td class="cell100 column1">8</td>
+									<td class="cell100 column1">9</td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">K</td>
+									<td class="cell100 column1">L</td>
+									<td class="cell100 column1">M</td>
+									<td class="cell100 column1">N</td>
+									<td class="cell100 column1">&Ntilde;</td>
+									<td class="cell100 column1">O</td>
+									<td class="cell100 column1">P</td>
+									<td class="cell100 column1">Q</td>
+									<td class="cell100 column1">R</td>
+									<td class="cell100 column1">S</td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">10</td>
+									<td class="cell100 column1">11</td>
+									<td class="cell100 column1">12</td>
+									<td class="cell100 column1">13</td>
+									<td class="cell100 column1">14</td>
+									<td class="cell100 column1">15</td>
+									<td class="cell100 column1">16</td>
+									<td class="cell100 column1">17</td>
+									<td class="cell100 column1">18</td>
+									<td class="cell100 column1">19</td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">T</td>
+									<td class="cell100 column1">U</td>
+									<td class="cell100 column1">V</td>
+									<td class="cell100 column1">W</td>
+									<td class="cell100 column1">X</td>
+									<td class="cell100 column1">Y</td>
+									<td class="cell100 column1">Z</td>
+									<td class="cell100 column1">Espacio/Caracter</td>
+									<td class="cell100 column1"></td>
+									<td class="cell100 column1"></td>
+								</tr>
+								<tr class="row100 body">
+									<td class="cell100 column1">20</td>
+									<td class="cell100 column1">21</td>
+									<td class="cell100 column1">22</td>
+									<td class="cell100 column1">23</td>
+									<td class="cell100 column1">24</td>
+									<td class="cell100 column1">25</td>
+									<td class="cell100 column1">26</td>
+									<td class="cell100 column1">27</td>
+									<td class="cell100 column1"></td>
+									<td class="cell100 column1"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+
+				<p style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="left">Lo que se requiere para encriptar el mensaje es lo siguiente:<br>
+				<ol style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="left">
+				  <li>1. Matriz M Del Mensaje</li>
+				  <li>2. Matriz Clave A</li>
+				  <li>3. Matriz Clave B</li>
+				</ol>
+				</p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz M Del Mensaje</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">7</td>
+<td class="cell100 column1">3</td>
+<td class="cell100 column1">15</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">4</td>
+<td class="cell100 column1">19</td>
+<td class="cell100 column1">15</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">7</td>
+<td class="cell100 column1">20</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz Clave A</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">3</td>
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">0</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">2</td>
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">6</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">0</td>
+<td class="cell100 column1">7</td>
+<td class="cell100 column1">4</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz Clave B</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">6</td>
+<td class="cell100 column1">1</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">3</td>
+<td class="cell100 column1">5</td>
+<td class="cell100 column1">0</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">1</td>
+<td class="cell100 column1">1</td>
+<td class="cell100 column1">2</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 20px;" align="left">Procedimiento:</p >
+				<p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">1. Multiplicar los elementos de cada fila de la Matriz Clave A por los elementos de cada columna de la Matriz M del Mensaje, y sumar los productos para encontrar cada elemento de la nueva matriz.<br>
+				Ecuacion: &#931;(A<sub>ik</sub> x M<sub>kj</sub>) = AM<sub>ij</sub><br><br></p><div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz AM</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">(3)(7) + (5)(4) + (0)(0) = 41</td>
+<td class="cell100 column1">(3)(3) + (5)(19) + (0)(7) = 104</td>
+<td class="cell100 column1">(3)(15) + (5)(15) + (0)(20) = 120</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">(2)(7) + (0)(4) + (6)(0) = 14</td>
+<td class="cell100 column1">(2)(3) + (0)(19) + (6)(7) = 48</td>
+<td class="cell100 column1">(2)(15) + (0)(15) + (6)(20) = 150</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">(0)(7) + (7)(4) + (4)(0) = 28</td>
+<td class="cell100 column1">(0)(3) + (7)(19) + (4)(7) = 161</td>
+<td class="cell100 column1">(0)(15) + (7)(15) + (4)(20) = 185</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 18px;" align="justify">2. Sumar cada elemento de la Matriz AM con los correspondientes elementos de la Matriz Clave B.<br><br></p>
+<div class="table100 ver1 m-b-110">
+					<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1">Matriz AM + B = C</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+<tr class="row100 body">
+<td class="cell100 column1">41 + 5 = 46</td>
+<td class="cell100 column1">104 + 6 = 110</td>
+<td class="cell100 column1">120 + 1 = 121</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">14 + 3 = 17</td>
+<td class="cell100 column1">48 + 5 = 53</td>
+<td class="cell100 column1">150 + 0 = 150</td>
+</tr>
+<tr class="row100 body">
+<td class="cell100 column1">28 + 1 = 29</td>
+<td class="cell100 column1">161 + 1 = 162</td>
+<td class="cell100 column1">185 + 2 = 187</td>
+</tr>
+</tbody>
+						</table>
+					</div>
+				</div><p  style="color: #0f3007;font-family: sans-serif;font-size: 25px;" align="justify">El mensaje encriptado es: <br>46&nbsp;&nbsp;17&nbsp;&nbsp;29&nbsp;&nbsp;110&nbsp;&nbsp;53&nbsp;&nbsp;162&nbsp;&nbsp;121&nbsp;&nbsp;150&nbsp;&nbsp;187&nbsp;&nbsp;<br><br></p>
+<p  style="color: #0f3007;font-family: sans-serif;font-size: 15px;" align="right">Generado: Tue Apr 13 11:58:49 CST 2021<br><br></p>
+<div align="center">
+				<a class="boton" href="Desencriptacion.html" style="color: #ffffff;">Reporte Desencriptacion</a>
+				</div></div>
+		</div>
+	</div>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+			
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
