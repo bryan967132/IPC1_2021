@@ -11,7 +11,7 @@ public class Boton extends JButton implements MouseListener,Runnable {
 	boolean activado = false;
 	int x,y,w,mov,animSize;
 	JLabel titulo;
-	public void PosicionTamaño(int x,int y,int w,int h) {
+	public void PosicionTamaÃ±o(int x,int y,int w,int h) {
 		this.x = x;
 		this.y = y;
 		this.w = w;
@@ -20,16 +20,17 @@ public class Boton extends JButton implements MouseListener,Runnable {
 		this.addMouseListener(this);
 		this.setVisible(true);
 	}
-	public void Texto(String texto,Color color,int tamaño) {
-		titulo = new Etiqueta(0,0,this.getWidth(),this.getHeight(),texto,color,tamaño);
+	public void Texto(String texto,Color color,int tamaÃ±o) {
+		titulo = new Etiqueta(0,0,this.getWidth(),this.getHeight(),texto,color,tamaÃ±o);
 		this.add(titulo);
 	}
-	public void Diseño(int grosorBorde,Color colorBorde,Color colorFondo) {
+	public void DiseÃ±o(int grosorBorde,Color colorBorde,Color colorFondo) {
 		this.setBackground(colorFondo);
 		this.setBorder(BorderFactory.createLineBorder(colorBorde,grosorBorde));
 	}
 	public void Animar(int animSize) {
-		this.animSize = animSize;activado = true;
+		this.animSize = animSize;
+		activado = true;
 	}
 	public void run() {
 		try {
